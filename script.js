@@ -40,7 +40,7 @@ async function generateImages(input) {
         const prompt = `${input} ${randomNumber}`;
         // We added random number to prompt to create different results
         const response = await fetch(
-            "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0",
+            "https://router.huggingface.co/replicate/v1/models/black-forest-labs/flux-dev/predictions",
             {
                 method: "POST",
                 headers: {
